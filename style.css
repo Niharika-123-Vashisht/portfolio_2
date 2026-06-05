@@ -1,0 +1,222 @@
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 0;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.profile-circle{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background:white;
+    color:#0f172a;
+    margin:0 auto 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    font-weight:bold;
+    border:5px solid rgba(255,255,255,0.3);
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#dbeafe;
+}
+
+/* Section Headings */
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0f172a;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:#2563eb;
+    display:block;
+    margin:10px auto;
+    border-radius:5px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* About */
+
+.about .card{
+    text-align:center;
+}
+
+/* Skills */
+
+.skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* Projects */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+/* Lists */
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin:10px 0;
+}
+
+/* Links */
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:500;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Contact */
+
+.contact .card{
+    text-align:center;
+}
+
+/* Contact Form */
+
+.contact-form .card{
+    max-width:800px;
+    margin:auto;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .profile-circle{
+        width:100px;
+        height:100px;
+        font-size:32px;
+    }
+
+    .container{
+        width:95%;
+    }
+}
